@@ -31,6 +31,17 @@ public class ListMovies {
     }
 
     // A través de funciones lambda, ordenamos por vistas
+
+    /**
+     * Añadí esta función pero no tengo muy bien entendido como hay que implementarlo. En mi juicio, cada vez que se
+     * "clickee" en una película, su vista aumentará, por tanto habrá que tener un número específico de vistas
+     * respectiva a cada película. Por eso añadí los observadores, para que de alguna manera se pueda registrar que se
+     * ha elegido esa película en cuestión. Sin embargo, no se me ocurre como implementarlo.
+     *
+     * Una manera que se me ocurre es como he hecho con los otros campos; inventarme yo un número cualquiera de visualizaciones,
+     * pasárselo por el constructor y que ordene esto de la misma manera que los otros. Pero muy dinámico al sentido que yo
+     * le encuentro al enunciado no es.
+      */
     public void sortByViews(){
         //Collections.sort(movies, Comparator.comparing())
         Collections.sort(movies, Comparator.comparing(Movie::getRating));

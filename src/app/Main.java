@@ -33,6 +33,10 @@ public class Main {
         movies.add(movie2);
         movies.add(movie3);
 
+        /**
+         * Organizar por género, por novedad, por vistas, y por valoraciones. Si se desea cambiar el orden, en
+         * la línea 46, en "commands.get", en vez de "Nuevo", elegir cualquiera de las otras.
+         */
         Map<String, Command> commands = new HashMap<>();
         commands.put("Genero", new SortByGenre(movies));
         commands.put("Nuevo", new SortByNew(movies));
