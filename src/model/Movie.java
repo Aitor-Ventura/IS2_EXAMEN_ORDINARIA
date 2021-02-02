@@ -59,8 +59,8 @@ public class Movie {//implements Comparable<Movie> {
                 ", director='" + director + '\'' +
                 ", actors='" + actors + '\'' +
                 ", year=" + year +
-                ", duration=" + duration +
-                ", rating=" + rating +
+                ", duration=" + duration + "min" +
+                ", rating=" + rating + "/10.0" +
                 ", genre='" + genre + '\'' +
                 '}';
     }

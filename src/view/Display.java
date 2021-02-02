@@ -2,7 +2,6 @@ package view;
 
 import model.ListMovies;
 
-public interface Display {
-    //Añadir objeto y extends
+public interface Display extends ListMovies.Observer {
     public void display(ListMovies listMovies);
 }
